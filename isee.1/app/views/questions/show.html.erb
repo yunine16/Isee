@@ -1,0 +1,10 @@
+<p>
+  <strong>Content:</strong>
+  <%= @question.content %>
+</p>
+<% @answers.each do |answer| %>
+  <%= answer.user.name %>
+  <%= answer.content %>
+<% end %>
+
+
