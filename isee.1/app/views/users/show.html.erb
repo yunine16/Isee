@@ -9,15 +9,17 @@
       </h1>
     </section>
   </aside>
-  <div class="questions">
-    <% @questions.each do |question| %>
-      <%= question.title %>
-      <%= question.content %>
-    <% end %>  
-  </div>
-  <div class="answers">
-    <% @answers.each do |answer| %>
-      <%= answer.content %>
-    <% end %>  
+  <div class="history">
+    <div class="answers">
+      <% @answers.each do |answer| %>
+        <%= answer.content %>
+      <% end %>
+    </div>
+    <div class="questions">
+      <% @questions.each do |question| %>
+        <%= question.title %>
+      <% end %>
+    </div>
+
   </div>
 </div>
