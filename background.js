@@ -18,6 +18,8 @@ script.src = "jquery-3.4.1.min.js";
 var head = document.getElementsByTagName("head");
 head[0].appendChild(script);
 //URLと選択内容をjson形式で送信
+
+
 function sendData(URL,TEXT) {
         var JSONdata = {
             url: URL,
@@ -26,7 +28,7 @@ function sendData(URL,TEXT) {
         console.log(JSONdata);
         $.ajax({
               type : 'post',
-              url : "modal.html",
+              url : "https://iwb.jp/jquery-ajax-jsonp/",
               data : JSON.stringify(JSONdata),
               contentType: 'application/JSON',
               //dataType : 'JSON',  不要かも
